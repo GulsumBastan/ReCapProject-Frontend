@@ -7,5 +7,6 @@ export interface CarDetailsDto{
   colorName:string;
   brandName:string;
   dailyPrice:number;
-  
+
 }
+
