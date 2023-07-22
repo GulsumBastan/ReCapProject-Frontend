@@ -19,7 +19,7 @@ import { CarimageService } from 'src/app/services/carimage.service';
 export class CarDetailComponent implements OnInit {
   carImages:CarImage[]=[];
   carDetails:CarDetailsDto[]=[];
-  apiUrl:string="https://localhost:7081";
+  apiUrl:string="https://localhost:7081/Uploads/Images/";
 
   dataLoaded=false;
   constructor(private carimageService:CarimageService,
@@ -32,7 +32,7 @@ export class CarDetailComponent implements OnInit {
     this.activatedRoute.params.subscribe(params=>{
       if(params["carId"])
       {
-         this.getCarImagesByCarId(params["carId"]),
+         //this.getCarImagesByCarId(params["carId"]),
          this.getCarDetailsByCarId(params["carId"])
       }
     })
